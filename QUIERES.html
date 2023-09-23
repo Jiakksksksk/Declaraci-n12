@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    color: rgb(70, 96, 96);
+    background-image: linear-gradient(135deg, #60dfff 0%, #b95c927c 70%);
+}
+
+
+
+.bottom{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-decoration: none;
+background: rgb(207, 21, 170);
+color: black;
+padding: 20px 20px;
+border-radius: 50px;
+font-size: 20px;
+
+
+
+}
+#si{
+    left: 20%;
+    transform: translateY(-50%) translateX(-20%);
+}
+
+#no{
+    left: 80%;
+    transform: translateY(-50%) translateX(-80%);
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di que si :(</title>
+  
+</head>
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+    <h1>¿Quieres ser mi niña?</h1>
+</center>
+
+<a href="https://www.mentsalud.com/wp-content/uploads/2020/10/tipos-de-amor.jpg" class="bottom" id="shi"><b> Si</b> :3</a>
+
+<a href="#" class="bottom" id="nop"> <b> No</b> :(</a>
+</body>
+<script>
+
+    let si=document.getElementById('si');
+    si.addEventListener("click" ,function(e){
+        alert("Gracias, Se que dirias que si, te quiero, XOXO");
+    });
+    
+    
+    let no=document.getElementById('no');
+    no.addEventListener("mousemove" ,function(e){
+       let x= Math.round(Math.random() * 95  )
+       let y= Math.round(Math.random() * 95  )
+       no.style.left = x+"%";
+       no.style.top = y+"%";
+    });
+    
+        </script>
+
+</html>
